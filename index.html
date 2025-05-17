@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HODU 랜딩페이지">
+  <title>HODU Landing Page</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- Skip to content -->
+  <a href="#main" class="skip-link">본문으로 건너뛰기</a>
+
+  <!-- Header -->
+  <header class="header" role="banner">
+    <div class="header__inner">
+      <h1 class="header__logo">
+        <img src="./img/Logo-fin (1).jpg" alt="HODU로고">
+      </h1>
+      <div class="header__nav-group">
+      <nav class="header__nav">
+        <ul class="nav__list">
+          <li><a href="#" class="nav__link">Home</a></li>
+          <li><a href="#" class="nav__link">About</a></li>
+          <li><a href="#" class="nav__link">Support</a></li>
+        </ul>
+      </nav>
+       <a href="#" class="button button--orange">Download</a> 
+      </div>
+    </div>
+  </header> 
+
+  <!-- Main Content -->
+  <main id="main">
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <h2 id="hero-title">Lorem Ipsum is simply<br> dummy text of the printing and</h2>
+          <p class="hero-description">Lorem Ipsum is simply dummy text of the printing and<br>
+typesetting industry.<br> 
+Lorem Ipsum has been the industry's standard dummy text<br>
+ever since the 1500s, when an unknown</p>
+          <a href="#" class="button button--orange">Download</a>
+        </div>
+        <figure class="hero__image">
+          <img src="./img/img_cat_png.png" alt="박스를 쓴 고양이">
+        </figure>
+      </div>
+    </section>
+
+    <!-- Feature Section -->
+    <section class="feature" aria-labelledby="feature-heading">
+      <div class="container feature__inner">
+        <figure class="feature__image">
+          <img src="./img/img_4.jpg" alt="누워 있는 고양이">
+        </figure>
+        <div class="feature__text">
+          <h3 id="feature-heading">Lorem Ipsum is simply<br>
+dummy text of the printing<br> and dummy text</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting<br> industry. </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+<section class="gallery" aria-labelledby="gallery-heading">
+  <div class="container">
+    <!-- 텍스트 영역 -->
+    <div class="gallery__text">
+      <h3 id="gallery-heading" class="gallery__title">
+        dummy text of the printing and dummy
+      </h3>
+      <p class="gallery__subtitle">
+        Lorem Ipsum is simply <span class="highlight">dummy text</span> of the printing and typesetting industry.<br>
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+      </p>
+    </div>
+
+    <!-- 이미지 영역 -->
+    <div class="gallery__grid">
+      <img src="./img/img_1.jpg" alt="앉아 있는 고양이">
+      <img src="./img/img_2.jpg" alt="바닥에 있는 고양이">
+      <img src="./img/img_3.jpg" alt="정면을 보는 고양이">
+    </div>
+  </div>
+</section>
+
+
+<!-- dummy date -->
+<div class="dummydate">
+  <div class="text-btn-group">
+    <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown<br>
+Ipsum is simply dummy text of the printing and typesetting industry.  
+    </p>
+    <button type="submit">Learn More</button>
+  </div>
+</div>
+ 
+
+    <!-- subscribe-section -->
+<section class="subscribe-section">
+  <div class="subscribe__container">
+     <div class="subscribe-box-wrapper">
+    <div class="subscribe-box">
+      <div class="subscribe-text">
+        <h2>Subscribe to our Blog post</h2>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+<p>Lorem Ipsum has been the industry's standard dummy text.</p>
+      </div>
+      <form class="subscribe-form">
+        <div class="input-group">
+          <img src="./img/mail.jpg" alt="Email Icon" class="email-icon">
+          <input type="email" placeholder="Enter your e-mail address">
+          <button type="submit">Subscribe</button>
+        </div>
+      </form>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- mobal -->
+  <div class="thank-you-container">
+    <img src="./img/cat 1.jpg" alt="고양이 이미지" class="cat-img" />
+    <h2>Thank you!</h2>
+    <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+    <button class="thank-you-btn">OK! I Love HODU</button>
+  </div>
+</main>
+
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <h1 class="footer__logo">
+        <img src="./img/Logo-fin.jpg" alt="호두 로고 이미지">
+      </h1>
+      <div class="footer__social">
+        <img src="./img/icon-blog.jpg" alt="블로그 아이콘">
+        <img src="./img/icon-insta.jpg" alt="인스타그램 아이콘">
+        <img src="./img/icon-facebook.jpg" alt="페이스북 아이콘">
+        <img src="./img/icon-youtube.jpg" alt="유튜브 아이콘">
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script for scroll fixed header -->
+  <script>
+    const header = document.querySelector('.header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        header.classList.add('header--fixed');
+      } else {
+        header.classList.remove('header--fixed');
+      }
+    });
+  </script>
+</body>
+</html>
