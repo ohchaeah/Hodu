@@ -1,5 +1,3 @@
-
-
 /* Base Reset */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -12,7 +10,7 @@ body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
   color: #333;
-  background-color: #fff;  /* 또는 #1f2a38, 전체 배경 톤에 따라 */
+  background-color: #fff;  
 }
 
 
@@ -72,11 +70,11 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 80px; /* 기존보다 좌우 padding 증가 */
+  padding: 20px 80px; 
 }
 nav ul {
   display: flex;
-  gap: 40px; /* 시안에 맞게 간격 조정 */
+  gap: 40px; 
 }
 
 .header--fixed {
@@ -115,7 +113,7 @@ nav ul {
 .header__nav-group {
   display: flex;
   align-items: center;
-  gap: 30px; /* 메뉴랑 버튼 사이 간격 */
+  gap: 30px; 
 }
 
 /* Hero Section */
@@ -125,9 +123,9 @@ nav ul {
 }
 
 .hero-title{
- font-size: 3.5rem;        /* 큰 제목 */
-  font-weight: 1500;         /* 굵은 글씨 */
-  line-height: 1.3;         /* 줄 간격 */
+ font-size: 3.5rem;        
+  font-weight: 700;         
+  line-height: 1.3;         
   margin-bottom: 1rem;
 }
 
@@ -153,9 +151,10 @@ nav ul {
   padding-right: 40px;
 }
 
-.hero__text h1 {
+.hero__text h2 {
   font-size: 28px;
   margin-bottom: 20px;
+   color: #000;
 }
 
 .hero__text p {
@@ -165,7 +164,7 @@ nav ul {
 .hero__image {
     width: 415px;
   height: 766px;
-  object-fit: cover; /* 이미지 비율 잘리더라도 꽉 채우고 싶을 때 */
+  object-fit: cover; 
 }
 
 .hero-content {
@@ -273,7 +272,7 @@ nav ul {
    text-align: center;
 }
 
-/* ✅ 그리드 레이아웃 정의 (반응형 3열) */
+/*  그리드 레이아웃 정의 (반응형 3열) */
 .gallery__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -281,7 +280,7 @@ nav ul {
   justify-items: center;
 }
 
-/* ✅ 개별 이미지 스타일 */
+/*  개별 이미지 스타일 */
 .gallery__grid img {
   width: 100%;
   max-width: 300px;
@@ -290,7 +289,7 @@ nav ul {
   transition: transform 0.3s ease;
 }
 
-/* ✅ hover 효과 */
+/* hover 효과 */
 .gallery__grid img:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -312,16 +311,16 @@ height: 64px;
 
 .text-btn-group {
   display: flex;
-  align-items: center;  /* 수직 가운데 정렬 */
-  gap: 20px;            /* 텍스트와 버튼 사이 간격 */
-}
+  align-items: center; 
+  gap: 20px;     
+}      
 
 .text-btn-group p {
   margin: 0;
-  white-space: nowrap;   /* 줄바꿈 방지 */
+  white-space: nowrap;   
   overflow: hidden;
-  text-overflow: ellipsis; /* 넘칠 때 말줄임표 */
-  flex-shrink: 1;        /* 공간에 맞게 줄어듦 */
+  text-overflow: ellipsis; 
+  flex-shrink: 1;      
 }
 
 /* 버튼 스타일 */
@@ -330,25 +329,29 @@ height: 64px;
   color: white;
   border: none;
   border-radius: 20px;
-  width: 147px;       /* 가로 크기 고정 */
-  height: 50px;       /* 세로 크기 고정 */
+  width: 147px;      
+  height: 50px;       
   cursor: pointer;
   font-size: 16px;
-  white-space: nowrap;    /* 글자가 줄 바꿈 안 되도록 */
-  overflow: hidden;       /* 넘치는 글자 숨기기 */
-  text-overflow: ellipsis; /* 넘칠 경우 말줄임표 */
-  display: flex;
+  white-space: nowrap;   
+  overflow: hidden;     
+  text-overflow: ellipsis; 
   justify-content: center;
-  align-items: center;    /* 글자 수직 가운데 정렬 */
-  padding: 0 16px;        /* 좌우 여백 (필요하면 조절) */
+  align-items: center;    
+  padding: 0 16px;        
 }
 
 
 
 /* subscribe-section */
 .subscribe-section {
-  /* background-color: #1f2a38; */
-  padding: 40px 0 10px 0; 
+  background-image: url('./img/img_5.jpg');
+  background-size: cover;
+  background-position: center 75%;
+  background-repeat: no-repeat;
+  padding: 100px 0 60px 0;
+  position: relative;
+  margin-top: -80px;
 }
 
 /* 구독 섹션 전용 */
@@ -360,13 +363,16 @@ height: 64px;
 
 
 .subscribe-box-wrapper {
-  max-width: 1000px;
+   max-width: 1000px;
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: -60px; 
 }
 
 .subscribe-box {
+    position: relative;
+  z-index: 2;
   background-color: #273043;
   border-radius: 20px;
   padding: 40px 60px;
@@ -398,9 +404,9 @@ height: 64px;
   line-height: 1.5;
   margin-bottom: 10px;
   color: #F2E9D8;
-   max-width: 480px; /* ✅ 너비 일치 */
-  white-space: normal; /* ✅ 줄바꿈 가능 */
-  word-break: keep-all; /* ✅ 단어 잘리지 않게 */
+   max-width: 480px; 
+  white-space: normal; 
+  word-break: keep-all; 
 }
 
 .subscribe-form {
@@ -425,9 +431,8 @@ height: 64px;
   outline: none;
   font-size: 14px;
   padding: 8px;
-  flex-grow: 1; /* 🔥 입력창이 공간을 차지하도록 */
-  min-width: 0;  /* 🔥 너무 넓어지지 않게 */
-  
+  flex-grow: 1; 
+  min-width: 0;  
 }
 
 .subscribe-form button {
@@ -438,7 +443,7 @@ height: 64px;
   padding: 8px 16px;
   cursor: pointer;
   font-size: 13px;
-    white-space: nowrap; /* 🔥 버튼 텍스트 줄바꿈 방지 */
+    white-space: nowrap; 
 }
 .input-group {
   display: flex;
@@ -446,6 +451,12 @@ height: 64px;
   width: 100%;
   gap: 10px;
 }
+
+.subscribe-box {
+  position: relative;
+  z-index: 2;
+}
+
 
 /* modal-overlay */
 /* body {
@@ -554,15 +565,15 @@ p {
 
 .footer__social{
     display: flex;
-    justify-content: right; /* 가운데 정렬 (필요시 left, right 가능) */
-    gap: 10px;              /* 아이콘 사이 간격 (필요에 따라 조절) */
+    justify-content: right; 
+    gap: 10px;              
 }
 
 .footer__inner {
   display: flex;
-  justify-content: space-between; /* 좌우로 벌리기 */
-  align-items: center;             /* 수직 가운데 정렬 */
-  flex-wrap: nowrap;               /* 줄 바꿈 방지 */
+  justify-content: space-between; 
+  align-items: center;            
+  flex-wrap: nowrap;             
 }
 
 /* Visually Hidden */
