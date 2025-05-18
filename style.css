@@ -241,7 +241,6 @@ nav ul {
   flex: 1;
 }
 
-
 /* Gallery Section */
 .gallery {
   padding: 40px 0;
@@ -610,4 +609,32 @@ p {
   .feature__text {
     padding-left: 0;
   }
+
+  .hero__inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero__text {
+    padding-right: 0;
+  }
+
+  .header__nav-group {
+    flex-direction: column;
+    gap: 16px;
+
+ .hero__inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero__text {
+    padding-right: 0;
+  }
+
+  .header__nav-group {
+    flex-direction: column;
+    gap: 16px;
+  } 
+ }
 }
